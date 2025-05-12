@@ -1,0 +1,14 @@
+# Cache & system
+__pycache__/
+*.pyc
+
+# Output PDFs
+*.pdf
+
+# MATLAB & misc
+*.asv
+.DS_Store
+
+# VS Code or PyCharm stuff
+.vscode/
+.idea/
