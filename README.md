@@ -13,7 +13,6 @@ neighbor-operations/        # Filters, edge detection, smoothing & sharpening
 simple-photoshop/           # Python GUI app with live filter testing
 output/                     # Sample outputs (before/after images)
 use-case-images/            # Test images to try out the algorithms
-requirements.txt            # Python dependencies for GUI
 ```
 
 ---
@@ -27,8 +26,9 @@ requirements.txt            # Python dependencies for GUI
 ### 🖼️ Python GUI App
 
 ```bash
+cd simple-photoshop
 pip install -r requirements.txt
-python simple-photoshop/GUI.py
+python GUI.py
 ```
 
 > No config needed. You can load an image and apply filters directly.
@@ -49,18 +49,18 @@ All required libraries are in `requirements.txt`:
 Install them using:
 
 ```bash
-pip install -r requirements.txt
+pip install -r simple-photoshop/requirements.txt
 ```
 
 ---
 
 ## 📸 Sample Outputs
 
-| Original | After Filter |
+|  |  |
 |----------|--------------|
-| ![Input](output/pass-filters/Butterworth_Low_Pass_Filter.png) | ![Output](output/pass-filters/Butterworth_High_Pass_Filter.png) |
+| ![Butterworth_Low_Pass_Filter](output/pass-filters/Butterworth_Low_Pass_Filter.png) | ![Butterworth_High_Pass_Filter](output/pass-filters/Butterworth_High_Pass_Filter.png) |
 | ![Mean](output/neighbor-operations/meanFilter.png) | ![Sharpen](output/neighbor-operations/sharpeningFilter.png) |
-| ![GUI](output/photoshop-screenshots/app-filter1.png) | ![GUI2](output/photoshop-screenshots/app-filter2.png) |
+| ![GUI1](output/photoshop-screenshots/app-filter1.png) | ![GUI2](output/photoshop-screenshots/app-filter2.png) |
 
 ---
 
@@ -74,5 +74,3 @@ pip install -r requirements.txt
 ## 🎓 Academic Context
 
 This was my project for the **Image Processing** subject in faculty. It’s now public for others to **learn**, **reuse**, or get inspired.
-
-> Built with ❤️ for knowledge sharing and portfolio building.
